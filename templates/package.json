@@ -1,6 +1,13 @@
 {
   "name": "<%= appNameSlug %>",
   "version": "0.0.0",
+  "description": "<%= projectDesc %>",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dtasic/slush-neat",
+  "author": {
+      "name": "<%= authorName %>",
+      "email": "<%= authorEmail %>"
+  },
   "dependencies": {},
   "devDependencies": {
     "connect": "^3.5.0",

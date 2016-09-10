@@ -44,8 +44,23 @@ gulp.task('default', function(done) {
 	gutil.log('Scaffolding Gulp Bower Bourbon Neat for your web app.');
 		var prompts = [{
 			name: 'appName',
-			message: 'What is the name of your project?',
+			message: 'What is the name of project?',
 			default: defaults.appName
+		},
+		{
+			name: 'projectDesc',
+			message: 'Project description?',
+			default: ''
+		},
+		{
+			name: 'authorName',
+			message: 'What is the name of author?',
+			default: defaults.userName
+		},
+		{
+			name: 'authorEmail',
+			message: 'Author e-mail?',
+			default: ''
 		}];
 		//Ask
 		inquirer.prompt(prompts, function(answers) {
