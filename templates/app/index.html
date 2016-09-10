@@ -1,0 +1,151 @@
+<!doctype html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title><%= appNameSlug %></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- endbuild -->
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+</head>
+
+<!--[if lt IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<body>
+  <header>
+    <div class="wrapper">
+      <div>
+        <img src="images/neat-logo.svg" />
+      </div>
+    </div>
+  </header>
+
+  <h2>Thank you for using Bourbon-Neat Generator.</h2>
+
+  <h3>Basic</h3>
+
+  <section class="zero">
+    <code>@include outer-container;</code>
+    <div id="alpha">
+      <code>@include span-columns(6);</code>
+    </div>
+    <div id="beta">
+      <code>@include span-columns(6);<br></code>
+    </div>
+  </section>
+
+
+  <h3>Multiple rows</h3>
+
+  <section class="first">
+    <code>@include outer-container;</code>
+    <div id="alpha">
+      <code>(1)</code>
+    </div>
+    <div id="beta">
+      <code>@include span-columns(11);<br>
+        @include omega();</code>
+      </div>
+      <div id="gamma">
+        <code>@include span-columns(2);</code>
+      </div>
+      <div id="delta">
+        <code>@include span-columns(10);<br>
+          @include omega();</code>
+        </div>
+        <div id="epsilon">
+          <code>@include span-columns(3);</code>
+        </div>
+        <div id="zeta">
+          <code>@include span-columns(9);<br>
+            @include omega();</code>
+          </div>
+          <div id="eta">
+            <code>@include span-columns(4);</code>
+          </div>
+          <div id="theta">
+            <code>@include span-columns(8);<br>
+              @include omega();</code>
+            </div>
+            <div id="iota">
+              <code>@include span-columns(5);</code>
+            </div>
+            <div id="kappa">
+              <code>@include span-columns(7);<br>
+                @include omega();</code>
+              </div>
+              <div id="lambda">
+                <code>@include span-columns(6);</code>
+              </div>
+              <div id="mu">
+                <code>@include span-columns(6);<br>
+                  @include omega();</code>
+                </div>
+              </section>
+
+              <h3>Nesting columns</h3>
+
+              <section class="second">
+                <code>@include outer-container;</code>
+                <div id="alpha">
+                  <code>@include span-columns(4);</code>
+                </div>
+                <div id="beta">
+                  <code class="block">@include span-columns(8);</code>
+                  <aside>
+                    <code>@include span-columns(4 of 8);</code>
+                  </aside>
+                  <article>
+                    <code>@include span-columns(4 of 8);</code>
+                  </article>
+                </div>
+              </section>
+
+                  <h3>Shifting columns</h3>
+
+                  <section class="fourth">
+                    <code>@include outer-container;</code>
+                    <div id="alpha">
+                      <code>@include span-columns(6);<br>
+                        @include shift(3);</code>
+                      </div>
+                    </section>
+
+
+
+                    <!-- build:js js/vendor.js -->
+                    <!-- bower:js -->
+                    <!-- endbower -->
+                    <!-- endbuild -->
+
+                    <!-- build:js scripts/main.js -->
+                    <script src="js/main.js"></script>
+                    <!-- endbuild -->
+
+                    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+                    <script>
+                    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                      e.src='//www.google-analytics.com/analytics.js';
+                      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                      ga('create','UA-XXXXX-X');ga('send','pageview');
+                      </script>
+                    </body>
+                    </html>
