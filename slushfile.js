@@ -31,7 +31,7 @@ configFile = homeDir + '/.gitconfig',
 user = {};
 if (require('fs').existsSync(configFile)) {
 user = require('iniparser').parseSync(configFile).user;
-}	
+}
 return {
 appName: workingDirName,
 userName: format(user.name) || osUserName,
@@ -67,9 +67,9 @@ gulp.task('default', function(done) {
                 var skipInstall = process.argv.slice(2).indexOf('--skip-install') >= 0;
 
                 if (!skipInstall) {
-					
-						
-						
+
+
+
                         var bowerJson = JSON.parse(fs.readFileSync('./bower.json'));
 
                         // wire Bower packages to .html
@@ -79,14 +79,14 @@ gulp.task('default', function(done) {
                                 src: 'app/index.html'
                         });
 
-                        
+
                                 // wire Bower packages to .scss
                                 wiredep({
                                         bowerJson: bowerJson,
                                         directory: 'app/bower_components',
                                         src: 'app/scss/*.scss'
                                 });
-                        
+
                 } else {
                         gutil.log('After running `npm install & bower install`, inject your front end dependencies into');
                         gutil.log('your HTML by running:');
